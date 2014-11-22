@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oakland Cat Finder</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/catFinder.js"></script>
+	
+</head>
+<body>
+	
+	<header>
+			<div class="top">
+				<a href="index.html"><img class="logo" src="img/logo.png"></a>
+				<h1>Oakland Kittie Finder</h1>
+				<img class="catAndPaws" src="img/catAndPaws.png">
+			</div>
+
+			<nav>
+				<a href="lostKitties.html">Lost Kitties</a>
+				<a href="foundKitties.html">Found Kitties</a>
+				<a id="howItWorks">How does this work?</a>
+			</nav>
+
+			<div class="bottom">
+				<img id="close" src="img/close.jpg">
+				<p>This website was created for my FEWD Project. I wanted people to be able to post whenever they lose their cat as well as whenever they find a cat.</p>
+
+				<p>Basically all you do is enter your cat's information and your contact information if you've lost a cat. Users will then be able to browse through and contact you if your pet is found.</p>
+			</div>
+
+
+	</header>
+
+	<div id="mainContainer">
+
+		<div class= 'submitLostCat row'>
+
+			<div class="lostCatForm">
+				<h1>Lost Your Kittie?</h1>
+
+				<p><strong>Step 1:</strong> Please enter your kittie's information. <br>
+				Be as descriptive as possible.</p>
+
+				<form>
+	                    
+			                      <input type="text" class="form-control" placeholder="Your kittie's name">
+
+			                      <label><input type="radio" name="gender" value="Male">Male</label> 
+			                      <!-- wrap around a labio so u can select the text or the button -->
+
+			                      <label><input type="radio" name="gender" value="Female">Female</label> 
+
+			                      <p>Color(s):</p>
+			                      <label><input type="checkbox" value="Black">Black</label>
+			                      <label><input type="checkbox" value="Black">Brown</label>
+			                      <label><input type="checkbox" value="Black">White</label>
+			                      <label><input type="checkbox" value="Black">Gray</label>
+			                      <label><input type="checkbox" value="Black">Orange</label>
+			                      <label><input type="checkbox" value="Black">Multicolored</label>
+
+
+			                      <!-- <select name="color">
+			                      		<option value='red'>Red one </option>
+			                      		<option value='yellow'>Yellow one </option>
+			                      		<option value='green'>Green one </option>
+			                      		<option value='orange'>Orange one </option>
+
+			                      </select> -->
+
+			                      	<p>Day your kittie went missing:</p>
+			                      <input type="date" name="dateLost">
+
+			                      <input type="text" placeholder="Gender">
+
+			                      <input type="text" placeholder="Colors">
+
+			                      <input type="text" placeholder="Location">
+
+			                      <p><strong>Step 2:</strong> Please enter your contact information.</p>
+
+			                      <input type="text" placeholder="Your phone number">
+
+			                      <input type="text" placeholder="Your email">
+
+			                      <input type="text" placeholder="Reward?">
+			                     
+		          		</form>
+
+		          		<input id="reviewCatButton" value="Review information" type="submit" class="btn" >
+
+
+			</div>
+
+
+			<div class="catMainAdReview">
+
+				<p><strong>Step 3:</strong> Please review your ad.</p>
+
+			           	<img class="mainImage" src="img/oreo.jpg">
+
+			           <div class="catName"><h3>Oreo</h3></div>
+			           <div class="catGender">Male</div>
+		                  	<div class="catColor">Black and White, Tuxedo</div>
+			           <div class="catDateMissing">Missing since 10/30/2014</div>
+			           <div class="catLocation">Laurel District, Oakland</div>
+
+			           <div class="catContactEmail"><a href="mailto:krm218@gmail.com">krm218@gmail.com</a></div>
+		                       <div class="catContactPhone">5115.981.1222</div>
+		                       <div class="reward">$200 Reward</div>
+
+			</div>
+
+			<div class="previewButton">
+
+				<input id="submitCatButton" value="Submit Kitty ad" type="submit" class="button" >
+
+			</div>
+
+		</div>
+
+		<div class='clearfix'></div>
+
+		<footer>
+			© 2014 Oakland Kittie Finder. KM
+		</footer>
+	</div>
+
+
+</body>
+</html>

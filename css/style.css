@@ -1,0 +1,461 @@
+/* 
+Project Name: Oakland Cat Finder
+Author: Ken Mau
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic);
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+		 -moz-box-sizing: border-box; /* Firexfox */
+		 -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+		 box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+		 content: ".";
+		 display: block;
+		 clear: both;
+		 visibility: hidden;
+		 line-height: 0;
+		 height: 0;
+}
+
+.clear {
+		clear: both;
+}
+
+.alignright {
+		float: right; 
+		padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+		float: left; 
+		padding: 0 10px 10px 0; 
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+		 color: #333;
+		 font-size: 16px;
+		 line-height: 1.4;
+		 font-family: 'Lato', sans-serif;
+		 background: #ececec;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#mainContainer {
+	width: 960px;
+	margin:20px auto;
+	background: white;
+	padding: 20px;
+	border: 1px dashed #ccc;
+}
+
+#mainContainer a {
+	color: black;
+	font-weight: 400;
+	background: #ececec;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+body {
+	margin: 0 auto;
+	color: #333;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+
+p {
+	line-height: 24px;
+	letter-spacing:  1px;
+}
+
+
+header {
+	padding: 0;
+	margin: 0 auto;
+	width: 960px;
+}
+
+header .top {
+	padding:  10px 0;
+}
+
+header .top img.logo  {
+	max-width: 90px;
+	margin-right: 15px;
+}
+
+header .top img.catAndPaws {
+	margin-left: 30px;
+	max-width: 100px;
+}
+
+header h1 {
+	font-size: 40px;
+	margin: 10px 0 0 0;
+	display: inline-block;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+header nav {
+	display: inline-block;
+	text-align: right;
+}
+
+header nav a {
+	color: white;
+	background: #333;
+	margin-right: 10px;
+	display: inline-block;
+	padding: 10px;
+	transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	text-transform: uppercase;
+}
+
+header nav a:hover{
+	color: #333;
+	background: #fff;
+	box-shadow: inset 0 0 0 3px #333;
+}
+
+header nav a#howItWorks{
+	background: transparent;
+	color: #ccc;
+	transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	cursor: pointer;
+	float: right;
+	text-transform: none;
+}
+
+header nav a#howItWorks:hover {
+	background: transparent;
+	box-shadow: inset 0 0 0 3px #d3d3d3;
+}
+
+header .bottom {
+	margin: 20px 0 10px 0;
+	border: 1px dashed #ccc;
+	display: none;
+	color: #acacac;
+	background: white;
+}
+
+header .bottom img#close {
+	cursor: pointer;
+	float: right;
+}
+
+header .bottom p {
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h1 {
+	font-size: 34px;
+	font-weight: 300;
+	margin: 0;
+	letter-spacing:  2px;
+}
+
+h3 {
+	color : #b9b9b9;
+	font-size: 22px;
+	font-weight: 300;
+	padding: 0;
+	margin: 15px 0;
+	letter-spacing: 1px;
+}
+
+h4 {
+	color: #989898;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0;
+	display: inline-block;
+}
+
+hr {
+	border: 0;
+	color: #dddddd;
+	background-color: #dddddd;
+	height: 1px;
+	margin: 20px 0 20px 0;
+}
+
+.content {
+	width:  50%;
+	float: left;
+	padding: 0 15px 0 15px;
+}
+
+.lostCatsMain {
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.lostCatsMain .catAd .catImgThumbnail {
+	float: none;
+}
+
+.lostCatsMain .catAd {
+	width: 33%;
+	border-bottom: 1px solid #f1f1f1;
+	padding-left: 0;
+}
+
+.lostCatsMain .catAd  h3{
+	font-size: 18px;
+}
+
+.side-box h1 {
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	margin:0;
+	padding: 0;
+}
+
+.side-box p {
+	margin-top: 2px;
+}
+
+a.button {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+.button {
+	padding: 10px;
+}
+
+.small-button.gray {
+	background: #f9f9f9;
+	border: 1px solid #dfdfdf;
+	transition: all .25s linear;
+	-webkit-  transition: all .25s linear;
+	float: right;
+}
+
+.button.gray {
+	background: #f9f9f9;
+	border: 1px solid #dfdfdf;
+	transition: all .25s linear;
+	-webkit-  transition: all .25s linear;
+}
+
+.button.gray:hover {
+	box-shadow: inset 0 0 0 5px #dfdfdf;
+}
+
+.previewButton {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.previewButton #submitCatButton {
+	display: none;
+	margin-top: 60px;
+	width: 100%;
+	font-size: 28px;
+	font-weight: 300;
+	background: #333;
+	color: white;
+}
+
+.previewButton #submitCatButton:hover {
+	background: white;
+	color: #333;
+	box-shadow: inset 0 0 0 5px #333;
+}
+
+.lostCats {
+}
+
+.row {
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.catAd {
+	width: 33%;
+	float: left;
+	color: black;
+	padding: 15px;
+	margin: 20px 0;
+	box-sizing: border-box;
+}
+
+.catAd h3 {
+	font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.catAd:last-child {
+	border-right: none;
+}
+
+.catAd .catImgThumbnail {
+	float : left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 3px;
+	border: 1px solid #333;
+}
+
+.catAd .catInfo {
+	margin-top: 0;
+}
+
+.catAd p.catInfo {
+	font-size: 16px;
+}
+
+.lostCatForm {
+	width: 80%;
+	float: left;
+}
+
+.catMainAd {
+	width: 50%;
+	float: left;
+}
+
+.submitLostCat form input {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	display: block;
+	padding: 5px 15px;
+	font-weight: 300;
+	margin: 20px 0;
+	width: 80%;
+}
+
+.submitLostCat ::-webkit-input-placeholder {
+	 color: #ccc;
+	 font-family: 'Lato', sans-serif;
+	 font-weight: 300;
+	 font-size: 16px;
+	 margin: 0;
+	 padding: 0;
+}
+
+.submitLostCat  input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	background: #f9f9f9;
+	color: #333;
+	font-size: 16px;
+	border: 1px solid #ececec;
+	padding: 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: all .25s linear;
+	-webkit-  transition: all .25s linear;
+}
+
+.submitLostCat input[type="submit"]:hover {
+	box-shadow: inset 0 0 0 4px #ececec;
+}
+
+.catMainAdReview {
+	text-align: center;
+	display: none;
+}
+
+.catMainAdReview img.mainImage {
+	padding: 5px;
+	border: 1px solid #333;
+	margin: 5px 0 0 0 ;
+}
+
+.catMainAdReview div {
+	margin-bottom: 2px;
+	font-weight: 300;
+}
+
+.catMainAdReview h3 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 300;
+}
+
+.catMainAdReview .catContactEmail a {
+	color: #333;
+	background: #f9f9f9;
+	border: 1px solid #dfdfdf;
+	padding: 2px;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+.catMainAdReview .catContactEmail a:hover {
+	background: #333;
+	color: #f9f9f9;
+	border: 1px solid #333;
+}
+
+.catMainAdReview .reward {
+	font-size: 24px;
+	font-style:  italic;
+}
+
+
+footer {
+	background: #f9f9f9;
+	color: #333;
+	margin-top: 40px;
+	font-size: 14px;
+	padding: 10px 0 10px 20px;
+}
+
